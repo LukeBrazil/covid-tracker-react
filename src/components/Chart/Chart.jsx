@@ -13,7 +13,6 @@ const Chart = () => {
         const fetchApi = async () => {
             setDailyData(await fetchDailyData());
         }
-        console.log(dailyData)
         fetchApi();
     })
 
@@ -36,6 +35,7 @@ const Chart = () => {
          }}
         />) : null
     )
+    
     const barChart = (
         dailyData.length ? (<Bar 
          data={{
